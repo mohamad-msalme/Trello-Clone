@@ -1,5 +1,6 @@
-import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import type { Metadata } from "next";
+import { NextThemeProvider } from "@/components/NextThemeProvider";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -14,9 +15,12 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html lang="en" suppressHydrationWarning className="light">
+      <body className={inter.className}>
+        <NextThemeProvider >{children}</NextThemeProvider>
+      </body>
     </html>
   );
 }
