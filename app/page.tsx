@@ -1,13 +1,12 @@
-import { Button } from "@/components/ui/button";
-import { ThemeButton } from "@/components/ui/ThemeButton";
+import React from "react";
+import { revalidateTag } from "next/cache";
 
-export default function Home() {
+const HomePage = async () => {
   return (
-    <div>
-      <Button variant="link" asChild  >
-        <a>Test</a>
-      </Button>
-      <ThemeButton />
+    <div className=" container border p-4 rounded-md mt-2 h-64 shadow-sm">
+      Home page
     </div>
   );
-}
+};
+
+export default HomePage;

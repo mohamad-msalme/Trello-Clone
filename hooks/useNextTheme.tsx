@@ -2,7 +2,6 @@ import { useTheme } from "next-themes";
 
 export const useNextTheme = () => {
         const { theme, setTheme} = useTheme();
-
         const getToggleTheme = (theme: string) => {
                 switch (theme) {
                         case "light": return "dark";
