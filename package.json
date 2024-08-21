@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "review": "npx prettier --write ./app/**/*.{js,ts,tsx}"
   },
   "dependencies": {
     "@radix-ui/react-dialog": "^1.1.1",

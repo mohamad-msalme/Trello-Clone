@@ -2,7 +2,6 @@ import { Inter } from "next/font/google";
 import type { Metadata } from "next";
 import { NextThemeProvider } from "@/components/NextThemeProvider";
 
-
 import "./globals.css";
 import React from "react";
 
